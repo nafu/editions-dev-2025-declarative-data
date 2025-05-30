@@ -23,6 +23,7 @@ redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
 [metaobjects.app.payment_messages]
 name = "Payment Messages"
 access.storefront = "public_read"
+access.admin = "merchant_read_write"
 
   [metaobjects.app.payment_messages.fields.payment_type]
   name = "Payment Type"
