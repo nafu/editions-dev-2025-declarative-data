@@ -29,6 +29,9 @@ access.admin = "merchant_read_write"
   name = "Payment Type"
   type = "single_line_text_field"
   required = true
+  validations.choices = [
+    "creditCard", "deferred", "local", "manualPayment", "offsite", "other", "paymentOnDelivery", "redeemable", "wallet", "customOnsite"
+  ]
 
   [metaobjects.app.payment_messages.fields.message]
   name = "Message"
